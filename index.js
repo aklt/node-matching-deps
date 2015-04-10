@@ -18,9 +18,9 @@ function requireDeps(match, o) {
         deps  = 'dependencies';
 
     while (dir.length > 0) {
-         if (fs.existsSync(dir + '/package.json'))
-             break;
         dir = dir.replace(/[\/\\]?[^\/\\]+[\/\\]?$/, '');
+        if (fs.existsSync(dir + '/package.json'))
+            break;
     }
     
     if (dir.length === 0) throw new Error('Could not find package.json');
