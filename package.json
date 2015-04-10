@@ -1,0 +1,12 @@
+{
+    "name": "matching-deps",
+    "description": "Require matching modules from package.json dependencies",
+    "version": "0.0.1",
+    "author": "Anders Thøgersen <anders@bladre.dk>",
+    "licenses": [ "MIT" ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/aklt/node-matching-deps.git"
+    }
+}
+
